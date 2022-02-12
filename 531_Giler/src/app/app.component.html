@@ -9,12 +9,13 @@
 <body>
   <div class="container">
     <h1>Aggiungi alla lista</h1>
-    <p>Inserisci qualcosa</p>
-    <input type="text">
-    <button type="button" (click) = "salva()">Save</button>
+    <p>Inserisci qualcosa
+      <input type="text" [(ngModel)] = "stringa">
+      <button type="button" (click) = "salva()">Save</button>
+    </p>
     <h2>Elementi della lista</h2>
     <ol>
-      <li *ngFor="let val of lista; let i = index">{{i}} . {{val}}</li>
+      <li *ngFor="let val of lista">{{val}}</li>
     </ol>
 </div>
 </body>

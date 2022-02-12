@@ -8,13 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = '531_Giler';
   lista: string [] = ["prova", "prova2"]
-  stringa = ""
-
-  funzione(){
-    this.lista.push(this.stringa)
-  }
+  stringa: string = ""
 
   salva(){
-    this
+    this.lista.push(this.stringa)
   }
 }
